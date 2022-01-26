@@ -1,0 +1,18 @@
+spring:
+  env: desa
+  datasource:
+    url: jdbc:h2:mem:coderhouse
+    driverClassName: org.h2.Driver
+    username: sa
+    password: sa
+  jpa:
+    database:
+      platform: org.hibernate.dialect.H2Dialect
+
+springdoc:
+  api-docs:
+    path: /openapi
+  swagger-ui:
+    path: /openapi/index.html
+server:
+  port: 8081
